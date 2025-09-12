@@ -6,14 +6,9 @@ function M.setup()
 	end
 
 	-- auto configure color if lualine is installed
-	local ok, lualine = pcall(require, "lualine")
+	local ok, _ = pcall(require, "lualine")
 	if ok then
-		local lualine_theme = require("autumn.lualine")
-		lualine.setup({
-			options = {
-				theme = lualine_theme,
-			},
-		})
+		package.loaded["lualine.themes.autumn"] = require("autumn.lualine")
 	end
 end
 return M

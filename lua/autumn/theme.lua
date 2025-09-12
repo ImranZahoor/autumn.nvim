@@ -6,6 +6,7 @@ local theme = {}
 theme.highlights = {
 	-- Editor UI
 	Normal = { fg = colors.gray_purple, bg = colors.black_deep },
+	NormalNC = { fg = colors.gray_purple, bg = colors.charcoal },
 	NormalFloat = { fg = colors.gray_purple, bg = colors.deep_purple },
 	CursorLine = { bg = colors.deep_purple },
 	CursorLineNr = { fg = colors.red_bright, bold = true },
@@ -18,6 +19,24 @@ theme.highlights = {
 	VertSplit = { fg = colors.charcoal },
 	Search = { bg = colors.orange_burnt, fg = colors.black_deep },
 	IncSearch = { bg = colors.red_bright, fg = colors.black_deep },
+
+	-- floating popups
+	Pmenu = { fg = colors.gray_purple, bg = colors.deep_purple },
+	PmenuSel = { fg = colors.black_deep, bg = colors.orange_burnt, bold = true },
+	PmenuSbar = { bg = colors.charcoal },
+	PmenuThumb = { bg = colors.brown_light },
+
+	FloatBorder = { fg = colors.charcoal, bg = colors.deep_purple },
+
+	-- search
+	CurSearch = { bg = colors.red_wine, fg = colors.black_deep, bold = true },
+
+	-- status/sign columns
+	SignColumn = { bg = colors.black_deep },
+	StatusColumn = { bg = colors.black_deep },
+	GitSignsAdd = { fg = colors.brown_light },
+	GitSignsChange = { fg = colors.orange_burnt },
+	GitSignsDelete = { fg = colors.red_bright },
 
 	-- Basic Syntax
 	Comment = { fg = colors.brown_light, italic = true },

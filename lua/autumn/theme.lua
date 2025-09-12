@@ -11,7 +11,7 @@ theme.highlights = {
 	CursorLine = { bg = colors.deep_purple },
 	CursorLineNr = { fg = colors.red_bright, bold = true },
 	LineNr = { fg = colors.brown_light },
-	Visual = { fg = colors.red_bright, bg = colors.charcoal },
+	Visual = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
 	StatusLine = { fg = colors.taupe, bg = colors.charcoal },
 	StatusLineNC = { fg = colors.gray_purple, bg = colors.deep_purple },
 	WinBar = { fg = colors.gray_purple, bg = colors.deep_purple },

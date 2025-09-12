@@ -28,6 +28,22 @@ theme.highlights = {
 
 	FloatBorder = { fg = colors.charcoal, bg = colors.deep_purple },
 
+	-- Bufferline / Tabline
+	BufferLineFill = { bg = colors.black_deep },
+	BufferLineBackground = { fg = colors.brown_light, bg = colors.black_deep },
+	BufferLineBufferSelected = { fg = colors.red_bright, bg = colors.deep_purple, bold = true },
+	BufferLineBufferVisible = { fg = colors.gray_purple, bg = colors.charcoal },
+
+	BufferLineSeparator = { fg = colors.charcoal, bg = colors.black_deep },
+	BufferLineSeparatorSelected = { fg = colors.deep_purple, bg = colors.deep_purple },
+	BufferLineSeparatorVisible = { fg = colors.charcoal, bg = colors.charcoal },
+
+	BufferLineIndicatorSelected = { fg = colors.red_bright, bg = colors.deep_purple },
+
+	-- Tabs
+	TabLine = { fg = colors.gray_purple, bg = colors.black_deep },
+	TabLineFill = { bg = colors.black_deep },
+	TabLineSel = { fg = colors.red_bright, bg = colors.deep_purple, bold = true },
 	-- search
 	CurSearch = { bg = colors.red_wine, fg = colors.black_deep, bold = true },
 	-- WhichKey

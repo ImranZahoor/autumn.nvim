@@ -20,6 +20,30 @@ theme.highlights = {
 	Search = { bg = colors.orange_burnt, fg = colors.black_deep },
 	IncSearch = { bg = colors.red_bright, fg = colors.black_deep },
 
+	-- nvim cmp
+	CmpItemAbbr = { fg = colors.gray_purple },
+	CmpItemAbbrMatch = { fg = colors.red_wine, bold = true },
+	CmpItemAbbrMatchFuzzy = { fg = colors.red_wine, italic = true },
+
+	CmpItemKindFunction = { fg = colors.red_wine },
+	CmpItemKindMethod = { fg = colors.red_wine },
+	CmpItemKindVariable = { fg = colors.gray_purple },
+	CmpItemKindClass = { fg = colors.taupe },
+	CmpItemKindInterface = { fg = colors.taupe },
+	CmpItemKindText = { fg = colors.orange_burnt },
+	CmpItemKindKeyword = { fg = colors.red_bright },
+	-- indent guide
+	IndentBlanklineChar = { fg = colors.charcoal },
+	IndentBlanklineContextChar = { fg = colors.red_bright },
+
+	-- notifications
+	NotifyBackground = { bg = colors.deep_purple },
+	NotifyERRORBorder = { fg = colors.red_bright, bg = colors.deep_purple },
+	NotifyWARNBorder = { fg = colors.orange_burnt, bg = colors.deep_purple },
+	NotifyINFOBorder = { fg = colors.brown_light, bg = colors.deep_purple },
+	NotifyDEBUGBorder = { fg = colors.gray_purple, bg = colors.deep_purple },
+	NotifyTRACEBorder = { fg = colors.red_wine, bg = colors.deep_purple },
+
 	-- floating popups
 	Pmenu = { fg = colors.gray_purple, bg = colors.deep_purple },
 	PmenuSel = { fg = colors.black_deep, bg = colors.orange_burnt, bold = true },

@@ -118,7 +118,10 @@ theme.highlights = {
 	-- Telescope
 	TelescopeNormal = { fg = colors.gray_purple, bg = colors.deep_purple },
 	TelescopeBorder = { fg = colors.charcoal, bg = colors.deep_purple },
-
+	--lsp
+	LspReferenceText = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
+	LspReferenceRead = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
+	LspReferenceWrite = { fg = colors.orange_burnt, bg = colors.charcoal, bold = true },
 	---------------------------------------------------------------------------
 	-- Treesitter Highlights
 	---------------------------------------------------------------------------

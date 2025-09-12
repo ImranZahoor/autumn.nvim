@@ -118,10 +118,30 @@ theme.highlights = {
 	-- Telescope
 	TelescopeNormal = { fg = colors.gray_purple, bg = colors.deep_purple },
 	TelescopeBorder = { fg = colors.charcoal, bg = colors.deep_purple },
-	--lsp
+	-- cursor/word occurrence highlights (LSP, vim-illuminate, matchup, treesitter, etc.)
 	LspReferenceText = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
 	LspReferenceRead = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
 	LspReferenceWrite = { fg = colors.orange_burnt, bg = colors.charcoal, bold = true },
+
+	-- vim-illuminate uses these
+	IlluminatedWordText = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
+	IlluminatedWordRead = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
+	IlluminatedWordWrite = { fg = colors.orange_burnt, bg = colors.charcoal, bold = true },
+	IlluminatedWord = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
+
+	-- vim-matchup / match / cursor-word helpers
+	MatchWord = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
+	MatchWordCur = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
+	CursorWord = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
+	CursorWord2 = { fg = colors.orange_burnt, bg = colors.charcoal, bold = true },
+
+	-- some treesitter helpers / references
+	TSDefinition = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
+	TSDefinitionUsage = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
+	TSReference = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
+
+	-- fallback if something links to this name
+	Reference = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
 	---------------------------------------------------------------------------
 	-- Treesitter Highlights
 	---------------------------------------------------------------------------

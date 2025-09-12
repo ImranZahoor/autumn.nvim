@@ -13,6 +13,8 @@ theme.highlights = {
 	Visual = { bg = colors.brown_medium },
 	StatusLine = { fg = colors.taupe, bg = colors.charcoal },
 	StatusLineNC = { fg = colors.gray_purple, bg = colors.deep_purple },
+	WinBar = { fg = colors.gray_purple, bg = colors.deep_purple },
+	WinBarNC = { fg = colors.brown_light, bg = colors.charcoal },
 	VertSplit = { fg = colors.charcoal },
 	Search = { bg = colors.orange_burnt, fg = colors.black_deep },
 	IncSearch = { bg = colors.red_bright, fg = colors.black_deep },

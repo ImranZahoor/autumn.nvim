@@ -30,6 +30,13 @@ theme.highlights = {
 
 	-- search
 	CurSearch = { bg = colors.red_wine, fg = colors.black_deep, bold = true },
+	-- WhichKey
+	WhichKey = { fg = colors.red_wine, bold = true },
+	WhichKeyGroup = { fg = colors.orange_burnt },
+	WhichKeyDesc = { fg = colors.gray_purple },
+	WhichKeySeparator = { fg = colors.brown_light },
+	WhichKeyFloat = { bg = colors.deep_purple },
+	WhichKeyBorder = { fg = colors.charcoal, bg = colors.deep_purple },
 
 	-- status/sign columns
 	SignColumn = { bg = colors.black_deep },

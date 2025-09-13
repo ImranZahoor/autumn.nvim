@@ -4,6 +4,7 @@ local colors = require("autumn.colors")
 local theme = {}
 
 theme.highlights = {
+
 	-- Editor UI
 	Normal = { fg = colors.gray_purple, bg = colors.black_deep },
 	NormalNC = { fg = colors.gray_purple, bg = colors.black_deep },
@@ -13,8 +14,8 @@ theme.highlights = {
 	LineNr = { fg = colors.brown_light },
 	Visual = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
 	StatusLine = { fg = colors.taupe, bg = colors.charcoal },
-	StatusLineNC = { fg = colors.gray_purple, bg = colors.charcoal },
-	WinBar = { fg = colors.gray_purple, bg = colors.charcoal },
+	StatusLineNC = { fg = colors.gray_purple, bg = colors.deep_purple },
+	WinBar = { fg = colors.gray_purple, bg = colors.deep_purple },
 	WinBarNC = { fg = colors.brown_light, bg = colors.charcoal },
 	VertSplit = { fg = colors.charcoal },
 	Search = { bg = colors.orange_burnt, fg = colors.black_deep },
@@ -27,7 +28,7 @@ theme.highlights = {
 
 	CmpItemKindFunction = { fg = colors.red_wine },
 	CmpItemKindMethod = { fg = colors.red_wine },
-	CmpItemKindVariable = { fg = colors.orange_burnt },
+	CmpItemKindVariable = { fg = colors.taupe },
 	CmpItemKindClass = { fg = colors.taupe },
 	CmpItemKindInterface = { fg = colors.taupe },
 	CmpItemKindText = { fg = colors.orange_burnt },
@@ -46,26 +47,29 @@ theme.highlights = {
 	NotifyTRACEBorder = { fg = colors.red_wine, bg = colors.black_deep },
 
 	-- floating popups
-	Pmenu = { fg = colors.gray_purple, bg = colors.charcoal },
+	Pmenu = { fg = colors.gray_purple, bg = colors.black_deep },
 	PmenuSel = { fg = colors.black_deep, bg = colors.orange_burnt, bold = true },
 	PmenuSbar = { bg = colors.charcoal },
 	PmenuThumb = { bg = colors.brown_light },
+
 	FloatBorder = { fg = colors.charcoal, bg = colors.black_deep },
 
 	-- Bufferline / Tabline
 	BufferLineFill = { bg = colors.black_deep },
 	BufferLineBackground = { fg = colors.brown_light, bg = colors.black_deep },
-	BufferLineBufferSelected = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
-	BufferLineBufferVisible = { fg = colors.gray_purple, bg = colors.black_deep },
+	BufferLineBufferSelected = { fg = colors.red_bright, bg = colors.deep_purple, bold = true },
+	BufferLineBufferVisible = { fg = colors.gray_purple, bg = colors.charcoal },
+
 	BufferLineSeparator = { fg = colors.charcoal, bg = colors.black_deep },
-	BufferLineSeparatorSelected = { fg = colors.charcoal, bg = colors.charcoal },
-	BufferLineSeparatorVisible = { fg = colors.charcoal, bg = colors.black_deep },
-	BufferLineIndicatorSelected = { fg = colors.red_bright, bg = colors.charcoal },
+	BufferLineSeparatorSelected = { fg = colors.deep_purple, bg = colors.deep_purple },
+	BufferLineSeparatorVisible = { fg = colors.charcoal, bg = colors.charcoal },
+
+	BufferLineIndicatorSelected = { fg = colors.red_bright, bg = colors.deep_purple },
 
 	-- Tabs
 	TabLine = { fg = colors.gray_purple, bg = colors.black_deep },
 	TabLineFill = { bg = colors.black_deep },
-	TabLineSel = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
+	TabLineSel = { fg = colors.red_bright, bg = colors.deep_purple, bold = true },
 
 	-- search
 	CurSearch = { bg = colors.red_wine, fg = colors.black_deep, bold = true },
@@ -75,8 +79,8 @@ theme.highlights = {
 	WhichKeyGroup = { fg = colors.orange_burnt },
 	WhichKeyDesc = { fg = colors.gray_purple },
 	WhichKeySeparator = { fg = colors.brown_light },
-	WhichKeyFloat = { bg = colors.charcoal },
-	WhichKeyBorder = { fg = colors.charcoal, bg = colors.charcoal },
+	WhichKeyFloat = { bg = colors.black_deep },
+	WhichKeyBorder = { fg = colors.charcoal, bg = colors.black_deep },
 
 	-- status/sign columns
 	SignColumn = { bg = colors.black_deep },
@@ -89,7 +93,7 @@ theme.highlights = {
 	Comment = { fg = colors.brown_light, italic = true },
 	Constant = { fg = colors.orange_burnt },
 	String = { fg = colors.orange_burnt },
-	Identifier = { fg = colors.orange_burnt },
+	Identifier = { fg = colors.red_bright },
 	Function = { fg = colors.red_wine, bold = true },
 	Statement = { fg = colors.red_bright, bold = true },
 	Keyword = { fg = colors.red_wine, bold = true },
@@ -98,7 +102,7 @@ theme.highlights = {
 	Boolean = { fg = colors.orange_burnt },
 	Operator = { fg = colors.gray_purple },
 
-	-- Diagnostics
+	-- Diagnostics (LSP + vim.diagnostic)
 	DiagnosticError = { fg = colors.red_bright },
 	DiagnosticWarn = { fg = colors.orange_burnt },
 	DiagnosticInfo = { fg = colors.brown_light },
@@ -110,30 +114,33 @@ theme.highlights = {
 	DiagnosticUnderlineHint = { undercurl = true, sp = colors.gray_purple },
 
 	-- Git
-	DiffAdd = { fg = colors.brown_light, bg = colors.charcoal },
-	DiffChange = { fg = colors.orange_burnt, bg = colors.charcoal },
-	DiffDelete = { fg = colors.red_bright, bg = colors.charcoal },
-	DiffText = { fg = colors.red_wine, bg = colors.charcoal },
+	DiffAdd = { fg = colors.brown_light, bg = colors.black_deep },
+	DiffChange = { fg = colors.orange_burnt, bg = colors.black_deep },
+	DiffDelete = { fg = colors.red_bright, bg = colors.black_deep },
+	DiffText = { fg = colors.red_wine, bg = colors.black_deep },
 
 	-- Telescope
-	TelescopeNormal = { fg = colors.gray_purple, bg = colors.charcoal },
-	TelescopeBorder = { fg = colors.charcoal, bg = colors.charcoal },
+	TelescopeNormal = { fg = colors.gray_purple, bg = colors.black_deep },
+	TelescopeBorder = { fg = colors.charcoal, bg = colors.black_deep },
 
-	-- cursor/word occurrence highlights
+	-- cursor/word occurrence highlights (LSP, vim-illuminate, matchup, etc.)
 	LspReferenceText = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
 	LspReferenceRead = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
 	LspReferenceWrite = { fg = colors.orange_burnt, bg = colors.charcoal, bold = true },
 
+	-- vim-illuminate
 	IlluminatedWordText = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
 	IlluminatedWordRead = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
 	IlluminatedWordWrite = { fg = colors.orange_burnt, bg = colors.charcoal, bold = true },
 	IlluminatedWord = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
 
+	-- vim-matchup / cursor-word helpers
 	MatchWord = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
 	MatchWordCur = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
 	CursorWord = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
 	CursorWord2 = { fg = colors.orange_burnt, bg = colors.charcoal, bold = true },
 
+	-- treesitter helpers
 	TSDefinition = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
 	TSDefinitionUsage = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
 	TSReference = { fg = colors.red_bright, bg = colors.charcoal, bold = true },
@@ -155,7 +162,7 @@ theme.highlights = {
 	["@method"] = { fg = colors.red_wine },
 	["@method.call"] = { fg = colors.red_wine },
 
-	["@variable"] = { fg = colors.orange_burnt },
+	["@variable"] = { fg = colors.taupe }, -- 🔥 more readable than gray
 	["@variable.builtin"] = { fg = colors.red_bright, italic = true },
 
 	["@keyword"] = { fg = colors.red_wine, bold = true },
@@ -188,15 +195,7 @@ theme.highlights = {
 	["@lsp.type.struct"] = { fg = colors.taupe, bold = true },
 	["@lsp.type.type"] = { fg = colors.taupe },
 	["@lsp.type.typeParameter"] = { fg = colors.red_bright, italic = true },
-	["@lsp.type.variable"] = { fg = colors.orange_burnt },
-
-	---------------------------------------------------------------------------
-	-- Lualine (fix filename/path readability)
-	---------------------------------------------------------------------------
-	LualineFilename = { fg = colors.orange_burnt, bg = colors.charcoal, bold = true },
-	LualineFilepath = { fg = colors.gray_purple, bg = colors.charcoal },
-	lualine_c_normal = { link = "LualineFilename" },
-	lualine_c_inactive = { link = "LualineFilepath" },
+	["@lsp.type.variable"] = { fg = colors.taupe },
 }
 
 return theme
